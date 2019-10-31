@@ -10,10 +10,10 @@ namespace nano\framework;
 
 use nano\View\Json;
 
-define('CACHE_DIR', '/../cache');
-
 class Persist extends Json
 {
+  static public $CACHE_DIR = 'cache/';
+
   /**
    * @var string
    */
@@ -29,7 +29,7 @@ class Persist extends Json
     if (!$identifier)
       $identifier = get_class($this);
 
-    $this->persist_filename = CACHE_DIR . "/$identifier.cache.json";
+    $this->persist_filename = self::$CACHE_DIR . "/$identifier.cache.json";
 
     if (file_exists($this->persist_filename))
       $this->load($this->persist_filename);

@@ -10,6 +10,8 @@ namespace nano\framework;
 
 use nano\View\Json;
 
+define('CACHE_DIR', '/../cache');
+
 class Persist extends Json
 {
   /**

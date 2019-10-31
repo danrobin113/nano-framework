@@ -10,6 +10,7 @@ namespace nano\framework;
 
 use nano\Http\Request;
 use nano\Routing\Route;
+use nano\View\View;
 
 /**
  * Overload API router to dynamically route controller views in application context

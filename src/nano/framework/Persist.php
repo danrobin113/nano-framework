@@ -12,7 +12,7 @@ use nano\View\Json;
 
 class Persist extends Json
 {
-  static public $CACHE_DIR = 'cache/';
+  static public $CACHE_DIR = 'cache';
 
   /**
    * @var string

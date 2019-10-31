@@ -99,7 +99,7 @@ trait Schema
   {
     foreach ($schema as $col => $field)
     {
-      $this->schema[$col] = new ModelSchemaField($field['name'], @$field['default'], @$field['required'], @$field['datatype'], @$field['description']);
+      $this->schema[$col] = new SchemaField($field['name'], @$field['default'], @$field['required'], @$field['datatype'], @$field['description']);
     }
   }
 
